@@ -36,8 +36,11 @@ function orbit_scripts() {
 add_action('wp_enqueue_scripts', 'orbit_styles');
 function orbit_styles() {
 
-  wp_register_style('slidesjs_example', plugins_url('css/foundation.css', __FILE__));
-  wp_enqueue_style('slidesjs_example');
+  wp_register_style('orbit_default', plugins_url('css/foundation.css', __FILE__));
+  wp_enqueue_style('orbit_default');
+	
+	wp_register_style('orbit_custom', plugins_url('css/custom.css', __FILE__));
+  wp_enqueue_style('orbit_custom');
 
 }
 
@@ -77,12 +80,14 @@ $options = get_option('orbit_slider_options');
 					
  
          $html = '
-<div class="container">
-<div id="slides" data-orbit data-options="animation:slide;
+<div class="slideshow-wrapper">
+  <div class="preloader"></div>
+<div id="slides" data-orbit data-options="
                   pause_on_hover:'.$options['pauseOnHover'].';
                   animation_speed:'.$options["animationSpeed"].';
                   navigation_arrows:'.$options["directionalNav"].';
                   bullets:'.$options["bullets"].';
+                  timer:'.$options["timer"].';
                   slide_number: false;">
 
 ';

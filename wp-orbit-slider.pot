@@ -12,145 +12,6 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: index.php:37
-msgid "Sorry, this plugin requires PHP version %s or later. You are currently running version %s."
-msgstr ""
-
-#: index.php:79
-msgid "Slide"
-msgstr ""
-
-#: index.php:80
-msgid "Slides"
-msgstr ""
-
-#: index.php:87
-msgid "Slide Category"
-msgstr ""
-
-#: index.php:88
-msgid "Slide Categories"
-msgstr ""
-
-#: index.php:118 index.php:255 index.php:263
-msgid "Orbit Slider Options"
-msgstr ""
-
-#: index.php:148
-msgid "Sorry, this plugin requires WordPress version %d or later. You are currently running version %s."
-msgstr ""
-
-#: index.php:264
-msgid "Slider Options"
-msgstr ""
-
-#: index.php:432
-msgid "Slider Categories"
-msgstr ""
-
-#: index.php:434
-msgid "Thumbnail"
-msgstr ""
-
-#: index.php:455
-msgid "No Slider Categories"
-msgstr ""
-
-#: classes/post_type.php:44 classes/post_type.php:45 classes/register_tax.php:38
-msgid "Add New "
-msgstr ""
-
-#: classes/post_type.php:46 classes/register_tax.php:36
-msgid "Edit "
-msgstr ""
-
-#: classes/post_type.php:47
-msgid "New "
-msgstr ""
-
-#: classes/post_type.php:48
-msgid "View "
-msgstr ""
-
-#: classes/post_type.php:49
-msgid "Search "
-msgstr ""
-
-#: classes/post_type.php:50
-msgid "No %s found"
-msgstr ""
-
-#: classes/post_type.php:51
-msgid "No %s found in Trash"
-msgstr ""
-
-#: classes/register_tax.php:31
-msgid "Search "
-msgstr ""
-
-#: classes/register_tax.php:32
-msgid "Popular "
-msgstr ""
-
-#: classes/register_tax.php:33
-msgid "All "
-msgstr ""
-
-#: classes/register_tax.php:34
-msgid "Parent "
-msgstr ""
-
-#: classes/register_tax.php:35
-msgid "Parent %s:"
-msgstr ""
-
-#: classes/register_tax.php:35
-msgid "Parent %s:"
-msgstr ""
-
-#: classes/register_tax.php:37
-msgid "Update "
-msgstr ""
-
-#: classes/register_tax.php:39
-msgid "New %s Name"
-msgstr ""
-
-#: classes/register_tax.php:40
-msgid "Separate %s with commas"
-msgstr ""
-
-#: classes/register_tax.php:41
-msgid "Add or remove "
-msgstr ""
-
-#: classes/register_tax.php:42
-msgid "Choose from the most used "
-msgstr ""
-
-#: includes/meta_box.php:14
-msgid "Caption text. This will be overridden if content is inserted in main editor above."
-msgstr ""
-
-#: includes/meta_box.php:20
-msgid "URL Link:"
-msgstr ""
-
-#: includes/meta_box.php:24
-msgid "Target:"
-msgstr ""
-
-#: includes/meta_box.php:26
-msgid "-- Choose One --"
-msgstr ""
-
-#: includes/meta_box.php:27
-msgid "Open link in same page"
-msgstr ""
-
-#: includes/meta_box.php:28
-msgid "Open link in a new page"
-msgstr ""
 
 #: includes/options_page.php:3
 msgid "WP Orbit Slider Options"
@@ -168,25 +29,6 @@ msgstr ""
 msgid "ms"
 msgstr ""
 
-#: includes/options_page.php:34
-msgid "Transition Style:"
-msgstr ""
-
-#: includes/options_page.php:36 includes/options_page.php:90
-msgid "Fade"
-msgstr ""
-
-#: includes/options_page.php:39
-msgid "Horizontal Slide"
-msgstr ""
-
-#: includes/options_page.php:42
-msgid "Vertical Slide"
-msgstr ""
-
-#: includes/options_page.php:45
-msgid "Horizontal Push"
-msgstr ""
 
 #: includes/options_page.php:50
 msgid "Show Nav Arrows"
@@ -228,24 +70,10 @@ msgstr ""
 msgid "Bullet Navigation"
 msgstr ""
 
-#: includes/options_page.php:121
-msgid "Center Bullets:"
-msgstr ""
 
-#: includes/options_page.php:123 includes/options_page.php:133 includes/options_page.php:151
-msgid "True"
-msgstr ""
-
-#: includes/options_page.php:126 includes/options_page.php:136 includes/options_page.php:154
-msgid "False"
-msgstr ""
-
-#: includes/options_page.php:131
-msgid "Bullet Thumbs:"
-msgstr ""
 
 #: includes/options_page.php:144
-msgid "Autoplay Timer Settings"
+msgid "Slide Timer Settings"
 msgstr ""
 
 #: includes/options_page.php:149
@@ -257,7 +85,7 @@ msgid "Set Slider Time Delay:"
 msgstr ""
 
 #: includes/options_page.php:171
-msgid "Slide Timer Animation"
+msgid "Slide Autoplay"
 msgstr ""
 
 #: includes/options_page.php:183
@@ -304,6 +132,3 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: includes/options_page.php:241
-msgid "Have you found this plugin useful? Consider a donation. Chuck us a buck!"
-msgstr ""
