@@ -1,0 +1,5 @@
+jQuery(document).foundation({
+  orbit: {
+   
+  }
+});	
