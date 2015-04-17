@@ -18,7 +18,6 @@ function orbit_slider_deactivation() {
 
 register_deactivation_hook(__FILE__, 'orbit_slider_deactivation');
 
-//add_action();
 
 add_action('wp_enqueue_scripts', 'orbit_scripts');
 function orbit_scripts() {
@@ -35,11 +34,10 @@ function orbit_scripts() {
 function orbit_styles() {
 
 	wp_register_style('orbit_default', plugins_url('css/foundation.css', __FILE__));
-	wp_enqueue_style('orbit_default');
 
 	wp_register_style('orbit_custom', plugins_url('css/custom.css', __FILE__));
 	
-	wp_enqueue_style('orbit_custom');
+	wp_enqueque_style('orbit_custom');
 }
 
 add_action('wp_enqueue_scripts', 'orbit_styles');
@@ -50,12 +48,13 @@ add_action('admin_menu', 'orbit_settings');
 
 function orbit_settings() {
 
-	add_menu_page('Orbit Slider Settings', 'Orbit Slider Settings', 'administrator', 'orbit_settings', 'orbit_display_settings');
+	add_menu_page('Orbit Slider Settings', 'Slider Settings', 'administrator', 'orbit_settings', 'orbit_display_settings');
+	register_setting( 'slider-settings-group', 'orbit_slider_options' );
 
 }
 
 function orbit_display_settings() {
-	include (dirname(__FILE__) . '/include/options.php');
+	include (dirname(__FILE__) . '/include/options_page.php');
 
 }
 
