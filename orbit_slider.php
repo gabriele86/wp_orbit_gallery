@@ -18,7 +18,7 @@ function orbit_slider_deactivation() {
 
 register_deactivation_hook(__FILE__, 'orbit_slider_deactivation');
 
-add_action();
+//add_action();
 
 add_action('wp_enqueue_scripts', 'orbit_scripts');
 function orbit_scripts() {
@@ -35,11 +35,11 @@ function orbit_scripts() {
 function orbit_styles() {
 
 	wp_register_style('orbit_default', plugins_url('css/foundation.css', __FILE__));
-	wp_enqueque_style('orbit_default');
+	wp_enqueue_style('orbit_default');
 
 	wp_register_style('orbit_custom', plugins_url('css/custom.css', __FILE__));
 	
-	wp_enqueque_style('orbit_custom');
+	wp_enqueue_style('orbit_custom');
 }
 
 add_action('wp_enqueue_scripts', 'orbit_styles');
