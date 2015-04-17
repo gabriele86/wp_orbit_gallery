@@ -24,9 +24,10 @@ add_action('wp_enqueue_scripts', 'orbit_scripts');
 function orbit_scripts() {
 
 	wp_register_script('foundation_init', plugins_url('js/foundation.min.js', __FILE__));
+	wp_enqueue_script('foundation_init');
 
 	wp_register_script('orbit_core', plugins_url('js/foundation/foundation.orbit.js', __FILE__), array("jquery"));
-
+	wp_enqueue_script('orbit_core');
 }
 
 
@@ -34,8 +35,11 @@ function orbit_scripts() {
 function orbit_styles() {
 
 	wp_register_style('orbit_default', plugins_url('css/foundation.css', __FILE__));
+	wp_enqueque_style('orbit_default');
 
 	wp_register_style('orbit_custom', plugins_url('css/custom.css', __FILE__));
+	
+	wp_enqueque_style('orbit_custom');
 }
 
 add_action('wp_enqueue_scripts', 'orbit_styles');
