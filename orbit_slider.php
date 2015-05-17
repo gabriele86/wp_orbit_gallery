@@ -18,6 +18,7 @@ function orbit_slider_deactivation() {
 
 register_deactivation_hook(__FILE__, 'orbit_slider_deactivation');
 
+//add_action();
 
 add_action('wp_enqueue_scripts', 'orbit_scripts');
 function orbit_scripts() {
@@ -33,11 +34,9 @@ function orbit_scripts() {
 
 function orbit_styles() {
 
-	wp_register_style('orbit_default', plugins_url('css/foundation.css', __FILE__));
-
 	wp_register_style('orbit_custom', plugins_url('css/custom.css', __FILE__));
 	
-	wp_enqueque_style('orbit_custom');
+	wp_enqueue_style('orbit_custom');
 }
 
 add_action('wp_enqueue_scripts', 'orbit_styles');
@@ -80,7 +79,8 @@ function orbit_display_slider($attr, $content) {
                   navigation_arrows:' . $options["directionalNav"] . ';
                   bullets:' . $options["bullets"] . ';
                   timer:' . $options["timer"] . ';
-                  slide_number: false;">
+                  slide_number: false;			
+">
 
 ';
 
@@ -177,7 +177,41 @@ function orbit_view_slider_images_box() {
           <tr>
             <th style=''><label for='Upload Images'>Image 5</label></th>
             <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[4] . "' /></td>
-          </tr>          
+          </tr> 
+          <tr>
+            <th style=''><label for='Upload Images'>Image 6</label></th>
+            <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[5] . "' /></td>
+          </tr>  
+
+          <tr>
+            <th style=''><label for='Upload Images'>Image 7</label></th>
+            <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[6] . "' /></td>
+          </tr>               
+
+          <tr>
+            <th style=''><label for='Upload Images'>Image 8</label></th>
+            <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[7] . "' /></td>
+          </tr>  
+
+          <tr>
+            <th style=''><label for='Upload Images'>Image 9</label></th>
+            <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[8] . "' /></td>
+          </tr> 
+
+          <tr>
+            <th style=''><label for='Upload Images'>Image 10</label></th>
+            <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[9] . "' /></td>
+          </tr>    
+
+          <tr>
+            <th style=''><label for='Upload Images'>Image 11</label></th>
+            <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[10] . "' /></td>
+          </tr> 
+
+          <tr>
+            <th style=''><label for='Upload Images'>Image 12</label></th>
+            <td><input name='gallery_img[]' id='wdc_slider_upload' type='text' value='" . $gallery_images[11] . "' /></td>
+          </tr>            
 
         </table>";
 
